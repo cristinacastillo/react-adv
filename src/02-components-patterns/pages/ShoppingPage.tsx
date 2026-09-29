@@ -1,10 +1,10 @@
 
-import '../styles/custom-styles.css'
 
 import { ProductCard, ProductButtons, ProductImage, ProductTitle } from "../components";
 
 import { useShoppingCart } from "../hooks/useShoppingCart";
 
+import '../styles/custom-styles.css'
 
 
 
