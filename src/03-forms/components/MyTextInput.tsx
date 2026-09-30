@@ -4,6 +4,7 @@ interface FormikTextInputProps {
     label: string;
     name: string;
     type?: 'text' | 'email' | 'password';
+    placeholder?: string;
 }
 
 interface FormikSelectProps {
@@ -18,7 +19,7 @@ interface FormikCheckboxProps {
     name: string;
 }
 
-export const FormikTextInput = ({ label, name, type = 'text' }: FormikTextInputProps) => {
+export const FormikTextInput = ({ label, name, type = 'text', placeholder }: FormikTextInputProps) => {
     const [field, meta] = useField<string>(name);
     const hasError = meta.touched && Boolean(meta.error);
 
@@ -29,6 +30,7 @@ export const FormikTextInput = ({ label, name, type = 'text' }: FormikTextInputP
                 {...field}
                 id={name}
                 type={type}
+                placeholder={placeholder}
                 className={hasError ? 'has-error' : ''}
                 aria-invalid={hasError}
                 aria-describedby={hasError ? `${name}-error` : undefined}

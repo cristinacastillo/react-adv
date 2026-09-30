@@ -4,6 +4,10 @@ form {
     width: 400px;
 }
 
+label {
+    display: block;
+}
+
 input, select {
     margin-top: 5px;
     outline: none;

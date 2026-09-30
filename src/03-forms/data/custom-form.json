@@ -1,0 +1,73 @@
+[
+    {
+        "type": "text",
+        "name": "firstName",
+        "placeholder": "Enter your first name",
+        "label": "First Name",
+        "value": "",
+        "validation": {
+            "required": true,
+            "minLength": 2,
+            "maxLength": 15
+        }
+    },
+    {
+        "type": "text",
+        "name": "lastName",
+        "placeholder": "Enter your last name",
+        "label": "Last Name",
+        "value": "",
+        "validation": {
+            "required": true
+        }
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "placeholder": "name@example.com",
+        "label": "Email",
+        "value": "",
+        "validation": {
+            "required": true,
+            "email": true
+        }
+    },
+    {
+        "type": "select",
+        "name": "jobType",
+        "placeholder": "Select a job type",
+        "label": "Job Type",
+        "value": "",
+        "options": [
+            { "value": "full-time", "label": "Full-time" },
+            { "value": "part-time", "label": "Part-time" },
+            { "value": "contract", "label": "Contract" },
+            { "value": "internship", "label": "Internship" }
+        ],
+        "validation": {
+            "required": true
+        }
+    },
+    {
+        "type": "password",
+        "name": "password",
+        "placeholder": "Enter a password",
+        "label": "Password",
+        "value": "",
+        "validation": {
+            "required": true,
+            "minLength": 6
+        }
+    },
+    {
+        "type": "password",
+        "name": "password2",
+        "placeholder": "Repeat your password",
+        "label": "Repeat Password",
+        "value": "",
+        "validation": {
+            "required": true,
+            "matches": "password"
+        }
+    }
+]
